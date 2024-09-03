@@ -1,8 +1,8 @@
-import axios, { AxiosResponse } from "axios";
+import axios from "axios";
 
 async function fetchData(url: string) {
   try {
-    const response: AxiosResponse = await axios.get(url);
+    const response: any = await axios.get(url);
     if (typeof response === "object" && response !== null) {
       return response.data;
     }
